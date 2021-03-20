@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Tringle detection javascript</title>
+	<link rel="icon" href="me.jpg"/>
+
+</head>
+<body>
+	<h1>Tringle Area Detech</h1>
+	<h3>If we know <b>Base</b> value and <b>Heigh</b> value </h3>
+	<input type="number" id="base" placeholder="Base value of Tringle"/>
+	<input type="number" id="height" placeholder="Hiehgt value of Tringle"/>
+	<input type="button" value="Tringle area" id="btn"/>
+	<h2 id="show"></h2>
+
+<script type="text/javascript">
+
+	document.querySelector("#btn").addEventListener("click",function(){
+	
+		var baseInp = document.querySelector("#base").value;
+		var heightInp = document.querySelector("#height").value;
+		var tringleArea= 1/2*baseInp*heightInp;
+		
+		document.querySelector("#show").innerHTML = "Tringle area = "+ tringleArea;
+		
+	});
+	
+
+</script>
+</body>
+</html>
